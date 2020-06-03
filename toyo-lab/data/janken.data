@@ -1,0 +1,6 @@
+classes = 3
+train = data/janken/train.txt
+valid = data/janken/test.txt
+names = cfg/janken.names
+backup = backup/
+

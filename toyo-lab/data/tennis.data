@@ -1,0 +1,6 @@
+classes = 9
+train = data/tennis/train.txt
+valid = data/tennis/test.txt
+names = toyo-lab/data/tennis.names
+backup = backup1/
+

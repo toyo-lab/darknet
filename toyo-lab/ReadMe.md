@@ -16,7 +16,7 @@ Version 3.4.3
 OpenCV をインストールしていないときは Makefile を書き換えて
 GPU=0 や OPENCV=0 とする。-pthread でエラーが出たら適当に削除。
 ```
-> git clone -b shirouzu https://github.com/toyo-lab/darknet
+> git clone https://github.com/toyo-lab/darknet
 > cd darknet
 > make 
 ```

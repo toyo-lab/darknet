@@ -1,6 +1,6 @@
-GPU=1
+GPU=0
 CUDNN=0
-OPENCV=1
+OPENCV=0
 OPENMP=0
 DEBUG=0
 
@@ -26,6 +26,7 @@ AR=ar
 ARFLAGS=rcs
 OPTS=-Ofast
 LDFLAGS= -lm -pthread 
+LDFLAGS= -lm 
 COMMON= -Iinclude/ -Isrc/
 CFLAGS=-Wall -Wno-unused-result -Wno-unknown-pragmas -Wfatal-errors -fPIC
 

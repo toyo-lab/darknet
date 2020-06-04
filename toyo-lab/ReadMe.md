@@ -11,10 +11,30 @@ OpenCV は make してインストールしてあります。
 Version 3.4.3
     /usr/local/lib/libopencv*
 
-## 自前でコンパイル
-以下の方法で出来るはず。./darknet が出来れば成功。GPU がないときや
-OpenCV をインストールしていないときは Makefile を書き換えて
-GPU=0 や OPENCV=0 とする。-pthread でエラーが出たら適当に削除。
+## 自前でコンパイル(豊泉研究室内)
+### GPU の環境設定
+.bashrc に 
+```
+PATH=$PATH:/usr/local/cuda-10.2/bin
+```
+を設定します。これでパスが通ったので nvcc コマンドが使えるようになります。
+nvcc は GPU 用のコンパイラです。
+### darknet のコンパイル
+次の手順で ./darknet が出来れば成功。
+```
+> git clone https://github.com/toyo-lab/darknet
+> cd darknet
+> make 
+```
+
+## 自前でコンパイル(自宅編)
+自宅では GPU や OpenCV がインストールされていないかもしれません。
+なので Makefile を書き換えます。
+
+GPU がないときは GPU=0
+
+OpenCV がないときは OpenCV=0
+
 ```
 > git clone https://github.com/toyo-lab/darknet
 > cd darknet
